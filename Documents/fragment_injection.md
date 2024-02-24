@@ -25,8 +25,37 @@ public class FragmentTransactionExample {
 }
 ```
 
+```
+String fragmentClassName = "MyFragment";
+Fragment myFragment = (Fragment) Class.forName(fragmentClassName).newInstance();
+```
+
+```
+String fragmentClassName = userInputFromExternalSource;
+Fragment myFragment = (Fragment) Class.forName(fragmentClassName).newInstance();
+```
+
+```
+String fragmentClassName = userInputFromExternalSource;
+if (isValidInput(fragmentClassName)) {
+    Fragment myFragment = (Fragment) Class.forName(fragmentClassName).newInstance();
+}
+```
+
 ## Regex
 
 ```
-FragmentTransaction\.replace\(.*,[^)]*Fragment\s*\.\s*class\s*\.
+transaction\.replace\(.*,[^)]*Fragment\s*\.\s*class\s*\w*
+```
+
+```
+(?i)\bFragment\s+[a-zA-Z_][a-zA-Z0-9_]*\s*=\s*\(\s*Fragment\s*\)\s*Class\.forName\(\s*("[a-zA-Z_][a-zA-Z0-9_]*")\s*\)\.newInstance\(\s*\);
+```
+
+```
+(?i)\bFragment\s+[a-zA-Z_][a-zA-Z0-9_]*\s*=\s*\(\s*Fragment\s*\)\s*Class\.forName\(\s*([a-zA-Z_][a-zA-Z0-9_]*)\s*\)\.newInstance\(\s*\);
+```
+
+```
+(?i)\bFragment\s+[a-zA-Z_][a-zA-Z0-9_]*\s*=\s*\(\s*Fragment\s*\)\s*Class\.forName\(\s*([a-zA-Z_][a-zA-Z0-9_]*)\s*\)\.newInstance\(\s*\);
 ```

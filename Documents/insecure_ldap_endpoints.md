@@ -10,32 +10,33 @@ unencrypted connections, posing a significant security risk.
 ## Patterns
 
 ```
-import javax.naming.Context;
-import javax.naming.NamingException;
-import javax.naming.directory.InitialDirContext;
-import java.util.Hashtable;
+String ldapUrl = "ldap://example.com:389";
+LdapContext context = new InitialLdapContext(env, null);
+```
 
-public class LdapContextExample {
-    public static void main(String[] args) {
-        // Matched line of code
-        Hashtable<String, String> env = new Hashtable<>();
-        env.put(Context.INITIAL_CONTEXT_FACTORY, "com.sun.jndi.ldap.LdapCtxFactory");
-        env.put(Context.PROVIDER_URL, "ldap://example.com:389");
+```
+String ldapUrl = "ldap://example.com:389";
+Hashtable<String, String> env = new Hashtable<>();
+env.put(Context.PROVIDER_URL, ldapUrl);
+LdapContext context = new InitialLdapContext(env, null);
+```
 
-        try {
-            InitialDirContext context = new InitialDirContext(env);
-
-            // Additional code for illustration
-            // ...
-        } catch (NamingException e) {
-            e.printStackTrace();
-        }
-    }
-}
+```
+String ldapUrl = "ldap://example.com:389";
+Hashtable<String, String> env = new Hashtable<>();
+env.put(Context.PROVIDER_URL, ldapUrl);
 ```
 
 ## Regex
 
 ```
-new InitialLdapContext\s*\(\s*.*,\s*null\s*\);
+\bLdapContext\s+[a-zA-Z_][a-zA-Z0-9_]*\s*=\s*new\s*InitialLdapContext\(\s*[a-zA-Z_][a-zA-Z0-9_]*,\s*null\s*\);
+```
+
+```
+\bHashtable\s*<\s*String,\s*String\s*>\s*[a-zA-Z_][a-zA-Z0-9_]*\s*=\s*new\s*Hashtable\s*<\s*>\(\s*\);\s*[a-zA-Z_][a-zA-Z0-9_]*\.put\s*\(\s*Context\.PROVIDER_URL,\s*("[^"]*ldap://[^"]*")\s*\);
+```
+
+```
+\bHashtable\s*<\s*String,\s*String\s*>\s*[a-zA-Z_][a-zA-Z0-9_]*\s*=\s*new\s*Hashtable\s*<\s*>\(\s*\);\s*[a-zA-Z_][a-zA-Z0-9_]*\.put\s*\(\s*Context\.PROVIDER_URL,\s*("[a-zA-Z_][a-zA-Z0-9_]*")\s*\);
 ```
