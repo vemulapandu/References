@@ -21,3 +21,5 @@ File file = new File(filePath);
 ```
 new\s+File\s*\(\s*".*?"\s*\+\s*userInput\s*\+\s*".*?"\s*\);
 ```
+
+## Owasp-Mobile: M4 Insufficient Input/Output Validation
