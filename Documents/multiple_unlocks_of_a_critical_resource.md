@@ -28,3 +28,5 @@ try {
 ```
 (lock\.lock\(\);[\s\S]*?lock\.unlock\(\);[^\}]*?lock\.unlock\(\);)
 ```
+
+## Owasp-Mobile: M8 Security Misconfiguration
