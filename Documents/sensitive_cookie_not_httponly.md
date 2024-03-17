@@ -25,3 +25,5 @@ setCookie("name=value; HttpOnly"); // Does not match
 ```
 setCookie\s*\(\s*".*(?<!HttpOnly)\b.*"\s*\);
 ```
+
+## Owasp-Mobile: M10 Insufficient Cryptography
