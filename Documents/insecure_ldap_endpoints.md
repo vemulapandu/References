@@ -40,3 +40,5 @@ env.put(Context.PROVIDER_URL, ldapUrl);
 ```
 \bHashtable\s*<\s*String,\s*String\s*>\s*[a-zA-Z_][a-zA-Z0-9_]*\s*=\s*new\s*Hashtable\s*<\s*>\(\s*\);\s*[a-zA-Z_][a-zA-Z0-9_]*\.put\s*\(\s*Context\.PROVIDER_URL,\s*("[a-zA-Z_][a-zA-Z0-9_]*")\s*\);
 ```
+
+## Owasp-Mobile: M5 Insecure Communication
