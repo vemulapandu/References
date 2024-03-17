@@ -34,3 +34,5 @@ public class DoubleCheckedLockingExample {
 ```
 \s*if\s*\(\s*\w+\s*==\s*null\s*\)\s*{\s*[\n\s]*\bsynchronized\s*\(\s*\w+\.\w+\(\)\s*\)\s*{\s*[\n\s]*if\s*\(\s*\w+\s*==\s*null\s*\)\s*{\s*\w+\s*=\s*new\s*\w+\(\);\s*}\s*}\s*}
 ```
+
+## Owasp-Mobile: -
