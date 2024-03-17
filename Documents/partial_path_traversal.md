@@ -29,3 +29,5 @@ public class FileTraversalExample {
 ```
 (File|new\s+File)\(.*[\"']\.\.[\"'].*\)
 ```
+
+## Owasp-Mobile: M4: Insufficient Input/Output Validation
