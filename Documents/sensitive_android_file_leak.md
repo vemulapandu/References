@@ -34,3 +34,5 @@ public class FileOutputStreamExample {
 ```
 FileOutputStream\s+\w+\s+=\s+new\s+FileOutputStream\s*\(\s*"[^"]*\/sdcard\/[^"]*"\s*\);
 ```
+
+## Owasp-Mobile: M6 Inadequate Privacy Controls
