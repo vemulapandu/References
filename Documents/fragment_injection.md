@@ -59,3 +59,5 @@ transaction\.replace\(.*,[^)]*Fragment\s*\.\s*class\s*\w*
 ```
 (?i)\bFragment\s+[a-zA-Z_][a-zA-Z0-9_]*\s*=\s*\(\s*Fragment\s*\)\s*Class\.forName\(\s*([a-zA-Z_][a-zA-Z0-9_]*)\s*\)\.newInstance\(\s*\);
 ```
+
+## Owasp-Mobile: M4 Insufficient Input/Output Validation
