@@ -30,3 +30,5 @@ public class WebViewExample {
 ```
 WebView\.loadData\(\s*".*<script>.*"\s*,\s*".*"\s*,\s*".*"\s*\);
 ```
+
+## Owasp-Mobile: M2 Inadequate Supply Chain Security
