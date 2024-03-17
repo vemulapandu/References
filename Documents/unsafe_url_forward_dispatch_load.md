@@ -17,3 +17,5 @@ const input = 'loadUrl("https://example.com");';
 ```
 loadUrl\((?:"|\')(.*?)(?:"|\')\);
 ```
+
+## Owasp-Mobile: M5 Insecure Communication
