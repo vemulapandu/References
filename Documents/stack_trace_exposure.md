@@ -33,3 +33,5 @@ public class LogExample {
 ```
 Log\.(v|d|i|w|e|wtf)\([^;]+e\.printStackTrace\(\);
 ```
+
+## Owasp-Mobile: M8 Security Misconfiguration
