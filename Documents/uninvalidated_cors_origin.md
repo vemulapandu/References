@@ -18,3 +18,5 @@ response.setHeader("Access-Control-Allow-Origin", request.getHeader("Origin"));
 ```
 response\.setHeader\("Access-Control-Allow-Origin",\s*request\.getHeader\("Origin"\)\s*\);
 ```
+
+## Owasp-Mobile: M4 Insufficient Input/Output Validation
