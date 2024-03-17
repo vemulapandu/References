@@ -20,3 +20,5 @@ Runtime.getRuntime().exec(command);
 ```
 Runtime\.getRuntime\(\)\.exec\(".*?"\s*\+\s*userInput\s*\+\s*".*?"\);
 ```
+
+## Owasp-Mobile: M4 Insufficient Input/Output Validation
