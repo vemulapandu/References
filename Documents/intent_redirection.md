@@ -30,3 +30,5 @@ public class IntentExample {
 ```
 Intent\s+\w+\s*=\s*new\s+Intent\s*\(\s*[^,]+,\s*Uri\.parse\(\s*"[^"]+"\s*\)\s*\);
 ```
+
+## Owasp-Mobile: M3 Insecure Authentication/Authorization
