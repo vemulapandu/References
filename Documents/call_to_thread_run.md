@@ -24,3 +24,5 @@ public class ExampleThread {
 ```
 Thread\s*\w+\s*=\s*new\s*Thread\(\)\s*;\s*\w+\.\s*run\s*\(\s*\);
 ```
+
+## Owasp-Mobile: -
